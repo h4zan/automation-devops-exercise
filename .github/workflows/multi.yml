@@ -39,7 +39,8 @@ jobs:
     needs: first
     steps:
       - name: "Final mood"
-        if: secrets.MOOD_NEITHER == 'Hungry'
+        if: secrets.MOOD_NEITHER != '' && secrets.MOOD_NEITHER == 'Hungry'
         run: echo "Joe is just ${{secrets.MOOD_NEITHER}}"
+
         
   
