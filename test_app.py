@@ -1,4 +1,5 @@
-from app_for_testing import main
+from app_for_testing import add_numbers
 
 def test_num():
-    assert app_for_testing()== 2
+
+    assert add_numbers()== 2
